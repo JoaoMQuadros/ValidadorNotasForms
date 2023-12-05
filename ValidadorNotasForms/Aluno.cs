@@ -8,14 +8,16 @@ namespace ValidadorNotasForms
 {
     public class Aluno
     {
-        public int IdAluno { get; set; }
-        public string NomeAluno { get; set; }
+        public int AlunoID { get; set; }
+        public string AlunoNome { get; set; }
         public List<Notas> lstNotas = new List<Notas>();
     }
     public class Notas
     {
-        public double NotaMat { get; set; }
-        public double NotaPor { get; set; }
-        public double NotaFis { get; set; }
+        public int NotaID { get; set; }
+        public int NotaArt { get; set; }
+        public int NotaMat { get; set; }
+        public int NotaPor { get; set; }
+        public int NotaFis { get; set; }
     }
 }
