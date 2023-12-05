@@ -26,8 +26,8 @@ namespace ValidadorNotasForms.Properties {
         [global::System.Configuration.ApplicationScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
-        [global::System.Configuration.DefaultSettingValueAttribute("\nData Source=(localdb)\\mssqllocaldb.;Initial Catalog=ValidadorDeNotas;Integrated " +
-            "Security=True;Pooling=False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=(localdb)\\mssqllocaldb;Initial Catalog=Notas];Integrated Security=Tru" +
+            "e;Pooling=False")]
         public string connString {
             get {
                 return ((string)(this["connString"]));

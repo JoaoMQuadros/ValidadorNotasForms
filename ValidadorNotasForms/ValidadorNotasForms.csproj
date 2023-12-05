@@ -47,7 +47,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Aluno.cs" />
-    <Compile Include="CodeFile1.cs" />
     <Compile Include="Frm_ValidaNota.cs">
       <SubType>Form</SubType>
     </Compile>

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.gpbNomeAluno = new System.Windows.Forms.GroupBox();
-            this.btLimpaNome = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.btnSalvaNome = new System.Windows.Forms.Button();
             this.txtNomeAluno = new System.Windows.Forms.TextBox();
             this.lblNomeAluno = new System.Windows.Forms.Label();
@@ -56,34 +56,39 @@
             // 
             // gpbNomeAluno
             // 
-            this.gpbNomeAluno.Controls.Add(this.btLimpaNome);
+            this.gpbNomeAluno.Controls.Add(this.button1);
             this.gpbNomeAluno.Controls.Add(this.btnSalvaNome);
             this.gpbNomeAluno.Controls.Add(this.txtNomeAluno);
             this.gpbNomeAluno.Controls.Add(this.lblNomeAluno);
             this.gpbNomeAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbNomeAluno.Location = new System.Drawing.Point(12, 12);
+            this.gpbNomeAluno.Location = new System.Drawing.Point(9, 10);
+            this.gpbNomeAluno.Margin = new System.Windows.Forms.Padding(2);
             this.gpbNomeAluno.Name = "gpbNomeAluno";
-            this.gpbNomeAluno.Size = new System.Drawing.Size(758, 177);
+            this.gpbNomeAluno.Padding = new System.Windows.Forms.Padding(2);
+            this.gpbNomeAluno.Size = new System.Drawing.Size(568, 144);
             this.gpbNomeAluno.TabIndex = 0;
             this.gpbNomeAluno.TabStop = false;
             this.gpbNomeAluno.Text = "Aluno";
             // 
-            // btLimpaNome
+            // button1
             // 
-            this.btLimpaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btLimpaNome.Location = new System.Drawing.Point(596, 148);
-            this.btLimpaNome.Name = "btLimpaNome";
-            this.btLimpaNome.Size = new System.Drawing.Size(75, 23);
-            this.btLimpaNome.TabIndex = 3;
-            this.btLimpaNome.Text = "Limpar";
-            this.btLimpaNome.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(447, 120);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 19);
+            this.button1.TabIndex = 6;
+            this.button1.Text = "Limpar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnSalvaNome
             // 
             this.btnSalvaNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvaNome.Location = new System.Drawing.Point(677, 148);
+            this.btnSalvaNome.Location = new System.Drawing.Point(508, 120);
+            this.btnSalvaNome.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalvaNome.Name = "btnSalvaNome";
-            this.btnSalvaNome.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvaNome.Size = new System.Drawing.Size(56, 19);
             this.btnSalvaNome.TabIndex = 2;
             this.btnSalvaNome.Text = "Salvar";
             this.btnSalvaNome.UseVisualStyleBackColor = true;
@@ -91,17 +96,19 @@
             // 
             // txtNomeAluno
             // 
-            this.txtNomeAluno.Location = new System.Drawing.Point(6, 79);
+            this.txtNomeAluno.Location = new System.Drawing.Point(4, 64);
+            this.txtNomeAluno.Margin = new System.Windows.Forms.Padding(2);
             this.txtNomeAluno.Name = "txtNomeAluno";
-            this.txtNomeAluno.Size = new System.Drawing.Size(404, 26);
+            this.txtNomeAluno.Size = new System.Drawing.Size(304, 23);
             this.txtNomeAluno.TabIndex = 1;
             // 
             // lblNomeAluno
             // 
             this.lblNomeAluno.AutoSize = true;
-            this.lblNomeAluno.Location = new System.Drawing.Point(6, 45);
+            this.lblNomeAluno.Location = new System.Drawing.Point(4, 37);
+            this.lblNomeAluno.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lblNomeAluno.Name = "lblNomeAluno";
-            this.lblNomeAluno.Size = new System.Drawing.Size(197, 20);
+            this.lblNomeAluno.Size = new System.Drawing.Size(169, 17);
             this.lblNomeAluno.TabIndex = 0;
             this.lblNomeAluno.Text = "Qual é o nome do Aluno?";
             // 
@@ -118,9 +125,11 @@
             this.gpbNotas.Controls.Add(this.label2);
             this.gpbNotas.Controls.Add(this.label1);
             this.gpbNotas.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gpbNotas.Location = new System.Drawing.Point(12, 195);
+            this.gpbNotas.Location = new System.Drawing.Point(9, 158);
+            this.gpbNotas.Margin = new System.Windows.Forms.Padding(2);
             this.gpbNotas.Name = "gpbNotas";
-            this.gpbNotas.Size = new System.Drawing.Size(758, 177);
+            this.gpbNotas.Padding = new System.Windows.Forms.Padding(2);
+            this.gpbNotas.Size = new System.Drawing.Size(568, 144);
             this.gpbNotas.TabIndex = 1;
             this.gpbNotas.TabStop = false;
             this.gpbNotas.Text = "Notas";
@@ -128,93 +137,107 @@
             // btnLimpaNota
             // 
             this.btnLimpaNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLimpaNota.Location = new System.Drawing.Point(596, 148);
+            this.btnLimpaNota.Location = new System.Drawing.Point(447, 120);
+            this.btnLimpaNota.Margin = new System.Windows.Forms.Padding(2);
             this.btnLimpaNota.Name = "btnLimpaNota";
-            this.btnLimpaNota.Size = new System.Drawing.Size(75, 23);
+            this.btnLimpaNota.Size = new System.Drawing.Size(56, 19);
             this.btnLimpaNota.TabIndex = 5;
             this.btnLimpaNota.Text = "Limpar";
             this.btnLimpaNota.UseVisualStyleBackColor = true;
+            this.btnLimpaNota.Click += new System.EventHandler(this.btnLimpaNota_Click);
             // 
             // txtNotaArt
             // 
-            this.txtNotaArt.Location = new System.Drawing.Point(450, 45);
+            this.txtNotaArt.Location = new System.Drawing.Point(338, 37);
+            this.txtNotaArt.Margin = new System.Windows.Forms.Padding(2);
             this.txtNotaArt.Name = "txtNotaArt";
-            this.txtNotaArt.Size = new System.Drawing.Size(135, 26);
+            this.txtNotaArt.Size = new System.Drawing.Size(102, 23);
             this.txtNotaArt.TabIndex = 7;
             // 
             // btnSalvaNota
             // 
             this.btnSalvaNota.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvaNota.Location = new System.Drawing.Point(677, 148);
+            this.btnSalvaNota.Location = new System.Drawing.Point(508, 120);
+            this.btnSalvaNota.Margin = new System.Windows.Forms.Padding(2);
             this.btnSalvaNota.Name = "btnSalvaNota";
-            this.btnSalvaNota.Size = new System.Drawing.Size(75, 23);
+            this.btnSalvaNota.Size = new System.Drawing.Size(56, 19);
             this.btnSalvaNota.TabIndex = 4;
             this.btnSalvaNota.Text = "Salvar";
             this.btnSalvaNota.UseVisualStyleBackColor = true;
+            this.btnSalvaNota.Click += new System.EventHandler(this.btnSalvaNota_Click);
             // 
             // txtNotaFis
             // 
-            this.txtNotaFis.Location = new System.Drawing.Point(450, 108);
+            this.txtNotaFis.Location = new System.Drawing.Point(338, 88);
+            this.txtNotaFis.Margin = new System.Windows.Forms.Padding(2);
             this.txtNotaFis.Name = "txtNotaFis";
-            this.txtNotaFis.Size = new System.Drawing.Size(135, 26);
+            this.txtNotaFis.Size = new System.Drawing.Size(102, 23);
             this.txtNotaFis.TabIndex = 7;
             // 
             // txtNotaPor
             // 
-            this.txtNotaPor.Location = new System.Drawing.Point(119, 108);
+            this.txtNotaPor.Location = new System.Drawing.Point(89, 88);
+            this.txtNotaPor.Margin = new System.Windows.Forms.Padding(2);
             this.txtNotaPor.Name = "txtNotaPor";
-            this.txtNotaPor.Size = new System.Drawing.Size(135, 26);
+            this.txtNotaPor.Size = new System.Drawing.Size(102, 23);
             this.txtNotaPor.TabIndex = 6;
             // 
             // txtNotaMat
             // 
-            this.txtNotaMat.Location = new System.Drawing.Point(119, 45);
+            this.txtNotaMat.Location = new System.Drawing.Point(89, 37);
+            this.txtNotaMat.Margin = new System.Windows.Forms.Padding(2);
             this.txtNotaMat.Name = "txtNotaMat";
-            this.txtNotaMat.Size = new System.Drawing.Size(135, 26);
+            this.txtNotaMat.Size = new System.Drawing.Size(102, 23);
             this.txtNotaMat.TabIndex = 2;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(345, 111);
+            this.label4.Location = new System.Drawing.Point(259, 90);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(54, 20);
+            this.label4.Size = new System.Drawing.Size(44, 17);
             this.label4.TabIndex = 5;
             this.label4.Text = "Fisica";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(345, 48);
+            this.label3.Location = new System.Drawing.Point(259, 39);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(49, 20);
+            this.label3.Size = new System.Drawing.Size(41, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Artes";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(17, 111);
+            this.label2.Location = new System.Drawing.Point(13, 90);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(85, 20);
+            this.label2.Size = new System.Drawing.Size(73, 17);
             this.label2.TabIndex = 3;
             this.label2.Text = "Portugues";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(17, 48);
+            this.label1.Location = new System.Drawing.Point(13, 39);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 20);
+            this.label1.Size = new System.Drawing.Size(80, 17);
             this.label1.TabIndex = 2;
             this.label1.Text = "Matematica";
             // 
             // gpbResultado
             // 
             this.gpbResultado.Controls.Add(this.dgvExibeNotas);
-            this.gpbResultado.Location = new System.Drawing.Point(12, 365);
+            this.gpbResultado.Location = new System.Drawing.Point(9, 297);
+            this.gpbResultado.Margin = new System.Windows.Forms.Padding(2);
             this.gpbResultado.Name = "gpbResultado";
-            this.gpbResultado.Size = new System.Drawing.Size(758, 247);
+            this.gpbResultado.Padding = new System.Windows.Forms.Padding(2);
+            this.gpbResultado.Size = new System.Drawing.Size(568, 201);
             this.gpbResultado.TabIndex = 2;
             this.gpbResultado.TabStop = false;
             this.gpbResultado.Text = "Resultado";
@@ -223,44 +246,50 @@
             // 
             this.dgvExibeNotas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvExibeNotas.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvExibeNotas.Location = new System.Drawing.Point(3, 18);
+            this.dgvExibeNotas.Location = new System.Drawing.Point(2, 15);
+            this.dgvExibeNotas.Margin = new System.Windows.Forms.Padding(2);
             this.dgvExibeNotas.Name = "dgvExibeNotas";
             this.dgvExibeNotas.RowTemplate.Height = 24;
-            this.dgvExibeNotas.Size = new System.Drawing.Size(752, 226);
+            this.dgvExibeNotas.Size = new System.Drawing.Size(564, 184);
             this.dgvExibeNotas.TabIndex = 0;
             // 
             // btnFechar
             // 
             this.btnFechar.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFechar.Location = new System.Drawing.Point(614, 618);
+            this.btnFechar.Location = new System.Drawing.Point(460, 502);
+            this.btnFechar.Margin = new System.Windows.Forms.Padding(2);
             this.btnFechar.Name = "btnFechar";
-            this.btnFechar.Size = new System.Drawing.Size(75, 23);
+            this.btnFechar.Size = new System.Drawing.Size(56, 19);
             this.btnFechar.TabIndex = 9;
             this.btnFechar.Text = "Fechar";
             this.btnFechar.UseVisualStyleBackColor = true;
+            this.btnFechar.Click += new System.EventHandler(this.btnFechar_Click);
             // 
             // btnExibirResul
             // 
             this.btnExibirResul.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExibirResul.Location = new System.Drawing.Point(695, 618);
+            this.btnExibirResul.Location = new System.Drawing.Point(521, 502);
+            this.btnExibirResul.Margin = new System.Windows.Forms.Padding(2);
             this.btnExibirResul.Name = "btnExibirResul";
-            this.btnExibirResul.Size = new System.Drawing.Size(75, 23);
+            this.btnExibirResul.Size = new System.Drawing.Size(56, 19);
             this.btnExibirResul.TabIndex = 8;
             this.btnExibirResul.Text = "Exibir";
             this.btnExibirResul.UseVisualStyleBackColor = true;
+            this.btnExibirResul.Click += new System.EventHandler(this.btnExibirResul_Click);
             // 
             // Frm_ValidaNota
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.ClientSize = new System.Drawing.Size(782, 653);
+            this.ClientSize = new System.Drawing.Size(586, 531);
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.gpbResultado);
             this.Controls.Add(this.btnExibirResul);
             this.Controls.Add(this.gpbNotas);
             this.Controls.Add(this.gpbNomeAluno);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Frm_ValidaNota";
             this.Text = "Validador de Notas";
             this.gpbNomeAluno.ResumeLayout(false);
@@ -287,7 +316,6 @@
         private System.Windows.Forms.TextBox txtNotaPor;
         private System.Windows.Forms.TextBox txtNotaMat;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btLimpaNome;
         private System.Windows.Forms.Button btnSalvaNome;
         private System.Windows.Forms.Button btnLimpaNota;
         private System.Windows.Forms.Button btnSalvaNota;
@@ -295,6 +323,7 @@
         private System.Windows.Forms.DataGridView dgvExibeNotas;
         private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.Button btnExibirResul;
+        private System.Windows.Forms.Button button1;
     }
 }
 
