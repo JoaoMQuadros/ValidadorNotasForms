@@ -8,9 +8,9 @@ namespace NovoProjetoValidaNotasForms
 {
     public class Aluno
     {
-        public int NomeID { get; set; }
-        public string NomeAluno { get; set; }
-        public List<Notas> notas = new List<Notas>();
+        public int AlunoID { get; set; }
+        public string AlunoNome { get; set; }
+        public List<Notas> lstNotas = new List<Notas>();
 
     }
     public class Notas
