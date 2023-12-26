@@ -11,14 +11,20 @@ namespace NovoProjetoValidaNotasForms
         public int AlunoID { get; set; }
         public string AlunoNome { get; set; }
         public List<Notas> lstNotas = new List<Notas>();
+        public double NotaID { get; set; }
 
     }
     public class Notas
     {
-        public int NotaID { get; set; }
-        public int NotaMat { get; set; }
-        public int NotaFis { get; set; }
-        public int NotaPor { get; set; }
-        public int NotaArt { get; set; }
+        public string NomeMateria { get; set; }
+        public double NotaID { get; set; }
+        public double RecebeNota { get; set; }
+
+    }
+
+    public class NomeMateria
+    {
+        public int IDNomeMateria { get; set; }
+        public string Materias { get; set; }
     }
 }
